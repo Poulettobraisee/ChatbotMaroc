@@ -1,0 +1,227 @@
+[
+  {
+    "nom": "Université Al Akhawayn",
+    "ville": "Ifrane",
+    "statut": "Privée",
+    "site_web": "https://www.aui.ma/",
+    "bourses": "Bourses pour étudiants internationaux et locaux, y compris des bourses d'excellence.",
+    "type_bourse": "Bourse d'excellence, Bourse de recherche",
+    "formations": [
+      "Sciences politiques",
+      "Économie",
+      "Informatique",
+      "Marketing",
+      "Ingénierie"
+    ]
+  },
+  {
+    "nom": "Université de la Méditerranée",
+    "ville": "Nador",
+    "statut": "Privée",
+    "site_web": "https://www.um.ac.ma/",
+    "bourses": "Bourses pour les étudiants locaux et internationaux.",
+    "type_bourse": "Bourse internationale, Bourse locale",
+    "formations": [
+      "Management",
+      "Marketing",
+      "Génie civil",
+      "Informatique",
+      "Économie"
+    ]
+  },
+  {
+    "nom": "Université Hassan II de Casablanca",
+    "ville": "Casablanca",
+    "statut": "Publique",
+    "site_web": "https://www.uh2c.ma/",
+    "bourses": "Des bourses d'études pour les étudiants nationaux et internationaux.",
+    "type_bourse": "Bourse nationale, Bourse internationale",
+    "formations": [
+      "Droit",
+      "Économie",
+      "Informatique",
+      "Médecine",
+      "Sciences et Techniques"
+    ]
+  },
+  {
+    "nom": "École Nationale Supérieure d'Informatique et d'Analyse des Systèmes (ENSIAS)",
+    "ville": "Rabat",
+    "statut": "Publique",
+    "site_web": "https://ensias.um5.ac.ma/",
+    "bourses": "Bourses nationales pour les étudiants méritants.",
+    "type_bourse": "Bourse nationale",
+    "formations": [
+      "Génie logiciel",
+      "Cybersécurité",
+      "Big Data",
+      "Intelligence artificielle",
+      "Systèmes embarqués"
+    ]
+  },
+  {
+    "nom": "École Mohammadia d'Ingénieurs (EMI)",
+    "ville": "Rabat",
+    "statut": "Publique",
+    "site_web": "https://www.emi.ac.ma/",
+    "bourses": "Bourses pour étudiants méritants et de recherche.",
+    "type_bourse": "Bourse nationale, Bourse de recherche",
+    "formations": [
+      "Génie civil",
+      "Génie électrique",
+      "Génie mécanique",
+      "Génie industriel",
+      "Génie informatique"
+    ]
+  },
+  {
+    "nom": "École Nationale de Commerce et de Gestion (ENCG)",
+    "ville": "Multiple (Casablanca, Tanger, etc.)",
+    "statut": "Publique",
+    "site_web": "https://encg.ma/",
+    "bourses": "Bourses pour les étudiants nationaux.",
+    "type_bourse": "Bourse nationale",
+    "formations": [
+      "Management",
+      "Marketing",
+      "Finance",
+      "Commerce international",
+      "Entrepreneuriat"
+    ]
+  },
+  {
+    "nom": "Institut Agronomique et Vétérinaire Hassan II (IAV)",
+    "ville": "Rabat",
+    "statut": "Publique",
+    "site_web": "https://www.iav.ac.ma/",
+    "bourses": "Soutien financier pour les étudiants en agriculture et médecine vétérinaire.",
+    "type_bourse": "Bourse nationale",
+    "formations": [
+      "Agronomie",
+      "Médecine vétérinaire",
+      "Génie rural",
+      "Biotechnologie",
+      "Gestion des ressources naturelles"
+    ]
+  },
+  {
+    "nom": "École Supérieure de Technologie (EST)",
+    "ville": "Multiple (Oujda, Fès, etc.)",
+    "statut": "Publique",
+    "site_web": "https://www.est-uh2c.ac.ma/",
+    "bourses": "Bourses pour étudiants en cycles techniques.",
+    "type_bourse": "Bourse nationale",
+    "formations": [
+      "Technologies industrielles",
+      "Génie informatique",
+      "Techniques de management",
+      "Réseaux et télécommunications",
+      "Automatisation industrielle"
+    ]
+  },
+  {
+    "nom": "Institut National des Postes et Télécommunications (INPT)",
+    "ville": "Rabat",
+    "statut": "Publique",
+    "site_web": "https://www.inpt.ac.ma/",
+    "bourses": "Bourses d'excellence pour les étudiants en télécommunications.",
+    "type_bourse": "Bourse nationale, Bourse internationale",
+    "formations": [
+      "Télécommunications",
+      "Réseaux",
+      "Big Data",
+      "IoT (Internet of Things)",
+      "Cybersécurité"
+    ]
+  },
+  {
+    "nom": "Académie Internationale Mohammed VI de l'Aviation Civile (AIAC)",
+    "ville": "Casablanca",
+    "statut": "Privée",
+    "site_web": "https://www.aiac.ma/",
+    "bourses": "Bourses pour les étudiants marocains et étrangers.",
+    "type_bourse": "Bourse d'excellence",
+    "formations": [
+      "Pilotage",
+      "Ingénierie aéronautique",
+      "Gestion aéroportuaire",
+      "Sécurité aérienne",
+      "Maintenance aéronautique"
+    ]
+  },
+  {
+    "nom": "École Nationale des Sciences Appliquées (ENSA)",
+    "ville": "Multiple (Tétouan, Marrakech, etc.)",
+    "statut": "Publique",
+    "site_web": "https://ensa.ac.ma/",
+    "bourses": "Bourses pour soutenir les étudiants en ingénierie.",
+    "type_bourse": "Bourse nationale, Bourse d'excellence",
+    "formations": [
+      "Informatique",
+      "Télécommunications",
+      "Génie industriel",
+      "Énergie renouvelable",
+      "Automatique"
+    ]
+  },
+  {
+    "nom": "Institut Supérieur des Sciences de la Santé (ISSS)",
+    "ville": "Settat",
+    "statut": "Publique",
+    "site_web": "https://www.uh2c.ac.ma/isss/",
+    "bourses": "Bourses pour les étudiants en sciences de la santé.",
+    "type_bourse": "Bourse nationale",
+    "formations": [
+      "Médecine",
+      "Pharmacie",
+      "Kinésithérapie",
+      "Soins infirmiers",
+      "Santé publique"
+    ]
+  },
+  {
+    "nom": "École Hassania des Travaux Publics (EHTP)",
+    "ville": "Casablanca",
+    "statut": "Publique",
+    "site_web": "https://www.ehtp.ac.ma/",
+    "bourses": "Bourses pour étudiants en génie civil et travaux publics.",
+    "type_bourse": "Bourse nationale, Bourse d'excellence",
+    "formations": [
+      "Génie civil",
+      "Génie hydraulique",
+      "Gestion de projet",
+      "Transport et logistique",
+      "Énergie et environnement"
+    ]
+  },
+  {
+    "nom": "Université Mohammed VI Polytechnique (UM6P)",
+    "ville": "Ben Guerir",
+    "statut": "Privée",
+    "site_web": "https://www.um6p.ma/",
+    "bourses": "Bourses pour étudiants locaux et internationaux.",
+    "type_bourse": "Bourse d'excellence, Bourse de recherche",
+    "formations": [
+      "Ingénierie",
+      "Sciences des matériaux",
+      "Agro-industrie",
+      "Énergies renouvelables",
+      "Management"
+    ]
+  },
+  {
+    "nom": "École Nationale Supérieure des Arts et Métiers (ENSAM)",
+    "ville": "Meknès",
+    "statut": "Publique",
+    "site_web": "https://www.ensam-umi.ac.ma/",
+    "bourses": "Bourses pour les étudiants en ingénierie.",
+    "type_bourse": "Bourse nationale",
+    "formations": [
+      "Génie mécanique",
+      "Génie industriel",
+      "Matériaux",
+      "Énergies renouvelables",
+      "Conception de produits"
+    ]
+  }
+]
