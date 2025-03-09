@@ -4,7 +4,7 @@
     "ville": "Ifrane",
     "statut": "Privée",
     "site_web": "https://www.aui.ma/",
-    "bourses": "Bourses pour étudiants internationaux et locaux, y compris des bourses d'excellence.",
+    "bourses": "Bourses pour étudiants internationaux et locaux, y compris des bourses d'excellence",
     "type_bourse": "Bourse d'excellence, Bourse de recherche",
     "formations": [
       "Sciences politiques",
@@ -15,213 +15,594 @@
     ]
   },
   {
-    "nom": "Université de la Méditerranée",
-    "ville": "Nador",
-    "statut": "Privée",
-    "site_web": "https://www.um.ac.ma/",
-    "bourses": "Bourses pour les étudiants locaux et internationaux.",
-    "type_bourse": "Bourse internationale, Bourse locale",
-    "formations": [
-      "Management",
-      "Marketing",
-      "Génie civil",
-      "Informatique",
-      "Économie"
-    ]
-  },
-  {
-    "nom": "Université Hassan II de Casablanca",
-    "ville": "Casablanca",
-    "statut": "Publique",
-    "site_web": "https://www.uh2c.ma/",
-    "bourses": "Des bourses d'études pour les étudiants nationaux et internationaux.",
-    "type_bourse": "Bourse nationale, Bourse internationale",
-    "formations": [
-      "Droit",
-      "Économie",
-      "Informatique",
-      "Médecine",
-      "Sciences et Techniques"
-    ]
-  },
-  {
-    "nom": "École Nationale Supérieure d'Informatique et d'Analyse des Systèmes (ENSIAS)",
-    "ville": "Rabat",
-    "statut": "Publique",
-    "site_web": "https://ensias.um5.ac.ma/",
-    "bourses": "Bourses nationales pour les étudiants méritants.",
-    "type_bourse": "Bourse nationale",
-    "formations": [
-      "Génie logiciel",
-      "Cybersécurité",
-      "Big Data",
-      "Intelligence artificielle",
-      "Systèmes embarqués"
-    ]
-  },
-  {
-    "nom": "École Mohammadia d'Ingénieurs (EMI)",
-    "ville": "Rabat",
-    "statut": "Publique",
-    "site_web": "https://www.emi.ac.ma/",
-    "bourses": "Bourses pour étudiants méritants et de recherche.",
-    "type_bourse": "Bourse nationale, Bourse de recherche",
-    "formations": [
-      "Génie civil",
-      "Génie électrique",
-      "Génie mécanique",
-      "Génie industriel",
-      "Génie informatique"
-    ]
-  },
-  {
-    "nom": "École Nationale de Commerce et de Gestion (ENCG)",
-    "ville": "Multiple (Casablanca, Tanger, etc.)",
-    "statut": "Publique",
-    "site_web": "https://encg.ma/",
-    "bourses": "Bourses pour les étudiants nationaux.",
-    "type_bourse": "Bourse nationale",
-    "formations": [
-      "Management",
-      "Marketing",
-      "Finance",
-      "Commerce international",
-      "Entrepreneuriat"
-    ]
-  },
-  {
-    "nom": "Institut Agronomique et Vétérinaire Hassan II (IAV)",
-    "ville": "Rabat",
-    "statut": "Publique",
-    "site_web": "https://www.iav.ac.ma/",
-    "bourses": "Soutien financier pour les étudiants en agriculture et médecine vétérinaire.",
-    "type_bourse": "Bourse nationale",
-    "formations": [
-      "Agronomie",
-      "Médecine vétérinaire",
-      "Génie rural",
-      "Biotechnologie",
-      "Gestion des ressources naturelles"
-    ]
-  },
-  {
-    "nom": "École Supérieure de Technologie (EST)",
-    "ville": "Multiple (Oujda, Fès, etc.)",
-    "statut": "Publique",
-    "site_web": "https://www.est-uh2c.ac.ma/",
-    "bourses": "Bourses pour étudiants en cycles techniques.",
-    "type_bourse": "Bourse nationale",
-    "formations": [
-      "Technologies industrielles",
-      "Génie informatique",
-      "Techniques de management",
-      "Réseaux et télécommunications",
-      "Automatisation industrielle"
-    ]
-  },
-  {
-    "nom": "Institut National des Postes et Télécommunications (INPT)",
-    "ville": "Rabat",
-    "statut": "Publique",
-    "site_web": "https://www.inpt.ac.ma/",
-    "bourses": "Bourses d'excellence pour les étudiants en télécommunications.",
-    "type_bourse": "Bourse nationale, Bourse internationale",
-    "formations": [
-      "Télécommunications",
-      "Réseaux",
-      "Big Data",
-      "IoT (Internet of Things)",
-      "Cybersécurité"
-    ]
-  },
-  {
-    "nom": "Académie Internationale Mohammed VI de l'Aviation Civile (AIAC)",
-    "ville": "Casablanca",
-    "statut": "Privée",
-    "site_web": "https://www.aiac.ma/",
-    "bourses": "Bourses pour les étudiants marocains et étrangers.",
-    "type_bourse": "Bourse d'excellence",
-    "formations": [
-      "Pilotage",
-      "Ingénierie aéronautique",
-      "Gestion aéroportuaire",
-      "Sécurité aérienne",
-      "Maintenance aéronautique"
-    ]
-  },
-  {
-    "nom": "École Nationale des Sciences Appliquées (ENSA)",
-    "ville": "Multiple (Tétouan, Marrakech, etc.)",
-    "statut": "Publique",
-    "site_web": "https://ensa.ac.ma/",
-    "bourses": "Bourses pour soutenir les étudiants en ingénierie.",
-    "type_bourse": "Bourse nationale, Bourse d'excellence",
-    "formations": [
-      "Informatique",
-      "Télécommunications",
-      "Génie industriel",
-      "Énergie renouvelable",
-      "Automatique"
-    ]
-  },
-  {
-    "nom": "Institut Supérieur des Sciences de la Santé (ISSS)",
-    "ville": "Settat",
-    "statut": "Publique",
-    "site_web": "https://www.uh2c.ac.ma/isss/",
-    "bourses": "Bourses pour les étudiants en sciences de la santé.",
-    "type_bourse": "Bourse nationale",
-    "formations": [
-      "Médecine",
-      "Pharmacie",
-      "Kinésithérapie",
-      "Soins infirmiers",
-      "Santé publique"
-    ]
-  },
-  {
-    "nom": "École Hassania des Travaux Publics (EHTP)",
-    "ville": "Casablanca",
-    "statut": "Publique",
-    "site_web": "https://www.ehtp.ac.ma/",
-    "bourses": "Bourses pour étudiants en génie civil et travaux publics.",
-    "type_bourse": "Bourse nationale, Bourse d'excellence",
-    "formations": [
-      "Génie civil",
-      "Génie hydraulique",
-      "Gestion de projet",
-      "Transport et logistique",
-      "Énergie et environnement"
-    ]
-  },
-  {
-    "nom": "Université Mohammed VI Polytechnique (UM6P)",
+    "nom": "Université Mohammed VI Polytechnique",
     "ville": "Ben Guerir",
     "statut": "Privée",
     "site_web": "https://www.um6p.ma/",
-    "bourses": "Bourses pour étudiants locaux et internationaux.",
-    "type_bourse": "Bourse d'excellence, Bourse de recherche",
+    "bourses": "Programmes de bourses méritoires et sectorielles",
+    "type_bourse": "Bourse d'excellence, Bourse sectorielle",
     "formations": [
       "Ingénierie",
-      "Sciences des matériaux",
-      "Agro-industrie",
       "Énergies renouvelables",
-      "Management"
+      "Biotechnologie",
+      "Data Science"
     ]
   },
   {
-    "nom": "École Nationale Supérieure des Arts et Métiers (ENSAM)",
+    "nom": "Université Internationale de Rabat",
+    "ville": "Rabat",
+    "statut": "Privée",
+    "site_web": "https://www.uir.ac.ma/",
+    "bourses": "Bourses de performance académique",
+    "type_bourse": "Bourse académique, Bourse sportive",
+    "formations": [
+      "Droit",
+      "Génie civil",
+      "Aéronautique",
+      "Relations internationales"
+    ]
+  },
+  {
+    "nom": "ENCG Casablanca",
+    "ville": "Casablanca",
+    "statut": "Publique",
+    "site_web": "https://www.encgcasa.ma/",
+    "bourses": "Bourses gouvernementales",
+    "type_bourse": "Bourse nationale",
+    "formations": ["Commerce", "Management", "Finance", "Logistique"]
+  },
+  {
+    "nom": "Université Hassan II",
+    "ville": "Casablanca",
+    "statut": "Publique",
+    "site_web": "https://www.univh2c.ma/",
+    "bourses": "Programmes nationaux et internationaux",
+    "type_bourse": "Bourse d'État, Bourse Erasmus+",
+    "formations": ["Médecine", "Droit", "Sciences", "Lettres"]
+  },
+  {
+    "nom": "ESCA École de Management",
+    "ville": "Casablanca",
+    "statut": "Privée",
+    "site_web": "https://www.esca.ma/",
+    "bourses": "Bourses d'entreprises partenaires",
+    "type_bourse": "Bourse de partenariat",
+    "formations": ["MBA", "Audit", "Marketing digital", "Entrepreneuriat"]
+  },
+  {
+    "nom": "Université Sidi Mohammed Ben Abdellah",
+    "ville": "Fès",
+    "statut": "Publique",
+    "site_web": "https://www.usmba.ac.ma/",
+    "bourses": "Bourses sur critères sociaux",
+    "type_bourse": "Bourse sociale",
+    "formations": ["Sciences islamiques", "Chimie", "Géographie", "Langues"]
+  },
+  {
+    "nom": "Université Euro-méditerranéenne de Fès",
+    "ville": "Fès",
+    "statut": "Privée",
+    "site_web": "https://www.ueuromed.org/",
+    "bourses": "Bourses internationales",
+    "type_bourse": "Bourse interuniversitaire",
+    "formations": [
+      "Architecture",
+      "Design",
+      "Tourisme",
+      "Négociation internationale"
+    ]
+  },
+  {
+    "nom": "École Centrale de Casablanca",
+    "ville": "Casablanca",
+    "statut": "Privée",
+    "site_web": "https://www.centrale-casablanca.ma/",
+    "bourses": "Bourses d'excellence académique",
+    "type_bourse": "Bourse d'études",
+    "formations": [
+      "Génie industriel",
+      "Informatique",
+      "Mathématiques appliquées"
+    ]
+  },
+  {
+    "nom": "Université Ibn Zohr",
+    "ville": "Agadir",
+    "statut": "Publique",
+    "site_web": "https://www.uiz.ac.ma/",
+    "bourses": "Programmes de mobilité internationale",
+    "type_bourse": "Bourse Erasmus+",
+    "formations": ["Biologie", "Génie électrique", "Gestion", "Droit"]
+  },
+  {
+    "nom": "Université Mundiapolis",
+    "ville": "Casablanca",
+    "statut": "Privée",
+    "site_web": "https://www.mundiapolis.ma/",
+    "bourses": "Bourses de mérite",
+    "type_bourse": "Bourse académique",
+    "formations": [
+      "Cybersécurité",
+      "Intelligence artificielle",
+      "Ressources humaines"
+    ]
+  },
+  {
+    "nom": "EHTP - École Hassania des Travaux Publics",
+    "ville": "Casablanca",
+    "statut": "Publique",
+    "site_web": "https://www.ehtp.ac.ma/",
+    "bourses": "Bourses d'État pour filières techniques",
+    "type_bourse": "Bourse nationale",
+    "formations": ["Génie civil", "Génie urbain", "Topographie"]
+  },
+  {
+    "nom": "Université Abdelmalek Essaâdi",
+    "ville": "Tétouan",
+    "statut": "Publique",
+    "site_web": "https://www.uae.ac.ma/",
+    "bourses": "Bourses de recherche scientifique",
+    "type_bourse": "Bourse de recherche",
+    "formations": ["Sciences marines", "Archéologie", "Traduction"]
+  },
+  {
+    "nom": "Université Privée de Marrakech",
+    "ville": "Marrakech",
+    "statut": "Privée",
+    "site_web": "https://www.upm.ac.ma/",
+    "bourses": "Aides financières sur étude de dossier",
+    "type_bourse": "Bourse partielle",
+    "formations": ["Hôtellerie", "Communication", "Design graphique"]
+  },
+  {
+    "nom": "ENSAM - École Nationale Supérieure d'Arts et Métiers",
     "ville": "Meknès",
     "statut": "Publique",
-    "site_web": "https://www.ensam-umi.ac.ma/",
-    "bourses": "Bourses pour les étudiants en ingénierie.",
-    "type_bourse": "Bourse nationale",
+    "site_web": "https://www.ensam.ma/",
+    "bourses": "Bourses pour élèves-ingénieurs",
+    "type_bourse": "Bourse d'État",
+    "formations": ["Génie mécanique", "Mécatronique", "Énergétique"]
+  },
+  {
+    "nom": "Université Mohammed V",
+    "ville": "Rabat",
+    "statut": "Publique",
+    "site_web": "https://www.um5.ac.ma/",
+    "bourses": "Programmes nationaux et coopération internationale",
+    "type_bourse": "Bourse gouvernementale",
+    "formations": ["Pharmacie", "Physique", "Sociologie", "Informatique"]
+  },
+  {
+    "nom": "École Supérieure de Management de Télécoms",
+    "ville": "Rabat",
+    "statut": "Privée",
+    "site_web": "https://www.esmt.ma/",
+    "bourses": "Bourses sectorielles TIC",
+    "type_bourse": "Bourse d'entreprise",
     "formations": [
-      "Génie mécanique",
-      "Génie industriel",
-      "Matériaux",
-      "Énergies renouvelables",
-      "Conception de produits"
+      "Management des télécoms",
+      "Big Data",
+      "Réseaux informatiques"
+    ]
+  },
+  {
+    "nom": "Université Internationale de Casablanca",
+    "ville": "Casablanca",
+    "statut": "Privée",
+    "site_web": "https://www.uic.ac.ma/",
+    "bourses": "Bourses d'excellence académique, programmes sectoriels (santé, ingénierie)",
+    "type_bourse": "Bourse d'excellence, Bourse sectorielle",
+    "formations": [
+      "Sciences de la Santé",
+      "Ingénierie",
+      "Commerce et Gestion",
+      "Droit"
+    ]
+  },
+  {
+    "nom": "Université Ibn Tofaïl",
+    "ville": "Kénitra",
+    "statut": "Publique",
+    "site_web": "https://www.uit.ac.ma/",
+    "bourses": "Bourses du Ministère de l'Éducation Nationale",
+    "type_bourse": "Bourse nationale",
+    "formations": ["Mathématiques", "Physique", "Chimie", "Biologie"]
+  },
+  {
+    "nom": "Université Privée de Fès",
+    "ville": "Fès",
+    "statut": "Privée",
+    "site_web": "https://www.upf.ac.ma/",
+    "bourses": "Bourses de solidarité et mérite",
+    "type_bourse": "Bourse sociale, Bourse académique",
+    "formations": ["Droit des Affaires", "Infirmier", "Génie des Procédés"]
+  },
+  {
+    "nom": "École Nationale de Commerce et de Gestion",
+    "ville": "Tanger",
+    "statut": "Publique",
+    "site_web": "https://www.encgt.ma/",
+    "bourses": "Bourses d'État + programmes Erasmus+",
+    "type_bourse": "Bourse internationale",
+    "formations": [
+      "Commerce International",
+      "Audit Financier",
+      "Logistique Portuaire"
+    ]
+  },
+  {
+    "nom": "Université Polydisciplinaire de Taroudant",
+    "ville": "Taroudant",
+    "statut": "Publique",
+    "site_web": "https://www.upt.ac.ma/",
+    "bourses": "Bourses régionales",
+    "type_bourse": "Bourse territoriale",
+    "formations": ["Tourisme Durable", "Agroécologie", "Patrimoine Culturel"]
+  },
+  {
+    "nom": "Université Sultan Moulay Slimane",
+    "ville": "Beni Mellal",
+    "statut": "Publique",
+    "site_web": "https://www.usms.ac.ma/",
+    "bourses": "Bourses pour étudiants ruraux",
+    "type_bourse": "Bourse sociale",
+    "formations": ["Agronomie", "Géologie", "Littérature Arabe"]
+  },
+  {
+    "nom": "HEM Business School",
+    "ville": "Casablanca",
+    "statut": "Privée",
+    "site_web": "https://www.hem.ac.ma/",
+    "bourses": "Bourses pour entrepreneurs",
+    "type_bourse": "Bourse d'innovation",
+    "formations": [
+      "Management Stratégique",
+      "Finance Islamique",
+      "Économie Digitale"
+    ]
+  },
+  {
+    "nom": "Université Chouaib Doukkali",
+    "ville": "El Jadida",
+    "statut": "Publique",
+    "site_web": "https://www.ucd.ac.ma/",
+    "bourses": "Bourses de recherche en sciences appliquées",
+    "type_bourse": "Bourse de recherche",
+    "formations": [
+      "Génie Chimique",
+      "Océanographie",
+      "Informatique Industrielle"
+    ]
+  },
+  {
+    "nom": "EMSI - École Marocaine des Sciences de l'Ingénieur",
+    "ville": "Rabat",
+    "statut": "Privée",
+    "site_web": "https://www.emsi.ma/",
+    "bourses": "Bourses pour femmes ingénieures",
+    "type_bourse": "Bourse d'égalité des genres",
+    "formations": ["Génie Logiciel", "Robotique", "Télécommunications"]
+  },
+  {
+    "nom": "Université Ibn Khaldoun",
+    "ville": "Tiaret",
+    "statut": "Privée",
+    "site_web": "https://www.uik.ac.ma/",
+    "bourses": "Bourses pour étudiants africains",
+    "type_bourse": "Bourse panafricaine",
+    "formations": ["Développement Durable", "Journalisme", "Psychologie"]
+  },
+  {
+    "nom": "Université Privée de Settat",
+    "ville": "Settat",
+    "statut": "Privée",
+    "site_web": "https://www.ups.ac.ma/",
+    "bourses": "Bourses de mobilité régionale",
+    "type_bourse": "Bourse de mobilité",
+    "formations": ["Génie Agricole", "Marketing Agroalimentaire", "Écologie"]
+  },
+  {
+    "nom": "École Nationale d'Architecture",
+    "ville": "Rabat",
+    "statut": "Publique",
+    "site_web": "https://www.ena.ma/",
+    "bourses": "Bourses pour projets urbains innovants",
+    "type_bourse": "Bourse de projet",
+    "formations": ["Architecture Urbaine", "Design d'Espace", "Patrimoine"]
+  },
+  {
+    "nom": "Université Cadi Ayyad",
+    "ville": "Marrakech",
+    "statut": "Publique",
+    "site_web": "https://www.uca.ac.ma/",
+    "bourses": "Bourses d'excellence scientifique",
+    "type_bourse": "Bourse académique",
+    "formations": ["Astrophysique", "Génie Minier", "Biotechnologie Végétale"]
+  },
+  {
+    "nom": "Université Privée des Sciences et Technologies",
+    "ville": "Oujda",
+    "statut": "Privée",
+    "site_web": "https://www.upst.ac.ma/",
+    "bourses": "Bourses pour startups technologiques",
+    "type_bourse": "Bourse d'entrepreneuriat",
+    "formations": ["Blockchain", "IoT", "Intelligence Artificielle Appliquée"]
+  },
+  {
+    "nom": "École Nationale Forestière d'Ingénieurs",
+    "ville": "Salé",
+    "statut": "Publique",
+    "site_web": "https://www.enfi.ac.ma/",
+    "bourses": "Bourses pour la préservation des forêts",
+    "type_bourse": "Bourse environnementale",
+    "formations": ["Foresterie", "Écologie Tropicale", "Gestion des Ressources"]
+  },
+  {
+    "nom": "Université Privée de Dakhla",
+    "ville": "Dakhla",
+    "statut": "Privée",
+    "site_web": "https://www.upd.ac.ma/",
+    "bourses": "Bourses pour étudiants sahraouis",
+    "type_bourse": "Bourse régionale",
+    "formations": ["Énergie Éolienne", "Aquaculture", "Tourisme Saharien"]
+  },
+  {
+    "nom": "Université Abdelhamid Ibn Badis",
+    "ville": "Mostaganem",
+    "statut": "Publique",
+    "site_web": "https://www.univ-mosta.dz/",
+    "bourses": "Bourses de coopération Maroc-Algérie",
+    "type_bourse": "Bourse internationale",
+    "formations": [
+      "Médecine Vétérinaire",
+      "Littérature Française",
+      "Génie Civil"
+    ]
+  },
+  {
+    "nom": "Université Euromed de Tanger",
+    "ville": "Tanger",
+    "statut": "Privée",
+    "site_web": "https://www.uemt.ma/",
+    "bourses": "Bourses pour étudiants méditerranéens",
+    "type_bourse": "Bourse Euromed",
+    "formations": [
+      "Diplomatie",
+      "Négociation Commerciale",
+      "Design d'Intérieur"
+    ]
+  },
+  {
+    "nom": "École Nationale d'Industrie Minérale",
+    "ville": "Rabat",
+    "statut": "Publique",
+    "site_web": "https://www.enim.ac.ma/",
+    "bourses": "Bourses sectorielles minières",
+    "type_bourse": "Bourse d'industrie",
+    "formations": ["Génie Minier", "Géologie Appliquée", "Métallurgie"]
+  },
+  {
+    "nom": "Université Privée de Technologie",
+    "ville": "Agadir",
+    "statut": "Privée",
+    "site_web": "https://www.upta.ac.ma/",
+    "bourses": "Bourses pour innovations technologiques",
+    "type_bourse": "Bourse d'innovation",
+    "formations": ["Cybersécurité", "Drone Engineering", "Smart Cities"]
+  },
+  {
+    "nom": "Université Moulay Ismail",
+    "ville": "Meknès",
+    "statut": "Publique",
+    "site_web": "https://www.umi.ac.ma/",
+    "bourses": "Bourses pour études historiques",
+    "type_bourse": "Bourse de recherche",
+    "formations": ["Histoire Marocaine", "Archéologie", "Anthropologie"]
+  },
+  {
+    "nom": "École Supérieure de Journalisme de Casablanca",
+    "ville": "Casablanca",
+    "statut": "Privée",
+    "site_web": "https://www.esjc.ma/",
+    "bourses": "Bourses pour reportages d'impact",
+    "type_bourse": "Bourse de projet médiatique",
+    "formations": ["Journalisme Investigatif", "Médias Sociaux", "Documentaire"]
+  },
+  {
+    "nom": "Université Privée de Ouarzazate",
+    "ville": "Ouarzazate",
+    "statut": "Privée",
+    "site_web": "https://www.upo.ac.ma/",
+    "bourses": "Bourses pour cinéma et audiovisuel",
+    "type_bourse": "Bourse artistique",
+    "formations": ["Cinéma", "Production Audiovisuelle", "Effets Spéciaux"]
+  },
+  {
+    "nom": "Université Mohammed Premier",
+    "ville": "Oujda",
+    "statut": "Publique",
+    "site_web": "https://www.ump.ac.ma/",
+    "bourses": "Bourses transfrontalières Maroc-Algérie",
+    "type_bourse": "Bourse internationale",
+    "formations": ["Droit Comparé", "Génie Électrique", "Sciences Politiques"]
+  },
+  {
+    "nom": "Université Polydisciplinaire de Errachidia",
+    "ville": "Errachidia",
+    "statut": "Publique",
+    "site_web": "https://www.uper.ma/",
+    "bourses": "Bourses pour études sahariennes",
+    "type_bourse": "Bourse géographique",
+    "formations": [
+      "Énergies Renouvelables en Milieu Désertique",
+      "Gestion des Oasis",
+      "Tourisme Saharien"
+    ]
+  },
+  {
+    "nom": "École Nationale de Commerce et de Gestion - Dakhla",
+    "ville": "Dakhla",
+    "statut": "Publique",
+    "site_web": "https://www.encgd.ma/",
+    "bourses": "Bourses pour développement régional",
+    "type_bourse": "Bourse territoriale",
+    "formations": [
+      "Économie Maritime",
+      "Gestion Portuaire",
+      "Commerce International"
+    ]
+  },
+  {
+    "nom": "Université Internationale des Sciences de la Santé - Tanger",
+    "ville": "Tanger",
+    "statut": "Privée",
+    "site_web": "https://www.uiss-tanger.ma/",
+    "bourses": "Bourses pour recherches médicales",
+    "type_bourse": "Bourse de recherche",
+    "formations": ["Médecine Dentaire", "Sage-Femme", "Nutrition Clinique"]
+  },
+  {
+    "nom": "Institut Royal des Technologies Spatiales - Rabat",
+    "ville": "Rabat",
+    "statut": "Public",
+    "site_web": "https://www.irts.ma/",
+    "bourses": "Bourses d'excellence scientifique",
+    "type_bourse": "Bourse spatiale",
+    "formations": [
+      "Ingénierie Satellite",
+      "Télédétection",
+      "Météorologie Avancée"
+    ]
+  },
+  {
+    "nom": "Université Euro-Africaine de Cinéma - Ouarzazate",
+    "ville": "Ouarzazate",
+    "statut": "Privée",
+    "site_web": "https://www.ueac.ma/",
+    "bourses": "Bourses pour talents cinématographiques",
+    "type_bourse": "Bourse artistique",
+    "formations": [
+      "Production Cinématographique",
+      "Effets Spéciaux Numériques",
+      "Scénarisation"
+    ]
+  },
+  {
+    "nom": "École Supérieure des Métiers de l'Artisanat - Fès",
+    "ville": "Fès",
+    "statut": "Public",
+    "site_web": "https://www.esmaf.ma/",
+    "bourses": "Bourses pour préservation du patrimoine",
+    "type_bourse": "Bourse culturelle",
+    "formations": [
+      "Céramique Traditionnelle",
+      "Travail du Cuir",
+      "Calligraphie Arabe"
+    ]
+  },
+  {
+    "nom": "Université des Sciences et Technologies Marines - Agadir",
+    "ville": "Agadir",
+    "statut": "Public",
+    "site_web": "https://www.ustm.ma/",
+    "bourses": "Bourses océanographiques",
+    "type_bourse": "Bourse marine",
+    "formations": ["Biologie Marine", "Aquaculture Durable", "Gestion Côtière"]
+  },
+  {
+    "nom": "Institut Supérieur d'Intelligence Artificielle - Benguerir",
+    "ville": "Benguerir",
+    "statut": "Privé",
+    "site_web": "https://www.isia.ma/",
+    "bourses": "Bourses pour projets d'IA innovants",
+    "type_bourse": "Bourse technologique",
+    "formations": [
+      "Machine Learning",
+      "Robotique Cognitive",
+      "Big Data Analytics"
+    ]
+  },
+  {
+    "nom": "Université Panafricaine de Gouvernance - Rabat",
+    "ville": "Rabat",
+    "statut": "Public",
+    "site_web": "https://www.upg.ma/",
+    "bourses": "Bourses pour leaders africains",
+    "type_bourse": "Bourse panafricaine",
+    "formations": [
+      "Diplomatie Continentale",
+      "Politiques Publiques",
+      "Droit International Africain"
+    ]
+  },
+  {
+    "nom": "École Nationale de Sauvetage Maritime - Al Hoceima",
+    "ville": "Al Hoceima",
+    "statut": "Public",
+    "site_web": "https://www.ensm.ma/",
+    "bourses": "Bourses pour services maritimes",
+    "type_bourse": "Bourse de service public",
+    "formations": [
+      "Secours en Mer",
+      "Navigation de Sécurité",
+      "Gestion des Crises Maritimes"
+    ]
+  },
+  {
+    "nom": "Université des Cultures Berbères - Khenifra",
+    "ville": "Khenifra",
+    "statut": "Public",
+    "site_web": "https://www.ucb.ma/",
+    "bourses": "Bourses pour préservation amazighe",
+    "type_bourse": "Bourse culturelle",
+    "formations": [
+      "Linguistique Amazighe",
+      "Histoire Berbère",
+      "Artisanat Traditionnel"
+    ]
+  },
+  {
+    "nom": "Institut Supérieur de Viticulture - Meknès",
+    "ville": "Meknès",
+    "statut": "Public",
+    "site_web": "https://www.isvm.ma/",
+    "bourses": "Bourses oenologiques",
+    "type_bourse": "Bourse agricole",
+    "formations": ["Œnologie", "Viticulture Durable", "Marketing Vinicole"]
+  },
+  {
+    "nom": "Université Euro-Méditerranéenne de Design - Tétouan",
+    "ville": "Tétouan",
+    "statut": "Privé",
+    "site_web": "https://www.umd.ma/",
+    "bourses": "Bourses pour créateurs méditerranéens",
+    "type_bourse": "Bourse internationale",
+    "formations": ["Design Textile", "Architecture d'Intérieur", "Mode Éthique"]
+  },
+  {
+    "nom": "École Nationale de Spéléologie - Midelt",
+    "ville": "Midelt",
+    "statut": "Public",
+    "site_web": "https://www.ensp.ma/",
+    "bourses": "Bourses pour explorations souterraines",
+    "type_bourse": "Bourse scientifique",
+    "formations": [
+      "Géologie Souterraine",
+      "Écologie des Grottes",
+      "Tourisme Spéléologique"
+    ]
+  },
+  {
+    "nom": "Université des Technologies Vertes - Laâyoune",
+    "ville": "Laâyoune",
+    "statut": "Public",
+    "site_web": "https://www.utv.ma/",
+    "bourses": "Bourses pour énergies renouvelables",
+    "type_bourse": "Bourse environnementale",
+    "formations": [
+      "Énergie Solaire",
+      "Désalinisation Écologique",
+      "Urbanisme Désertique"
     ]
   }
 ]

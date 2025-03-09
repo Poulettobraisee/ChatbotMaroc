@@ -1,76 +1,136 @@
 import json
 import unicodedata
+import re
+from collections import defaultdict
+from fuzzywuzzy import fuzz, process
 
-# Fonction pour normaliser les chaînes (enlever les accents, etc.)
+SYNONYMS = {
+    "formations": ["filières", "cursus", "programmes", "diplômes"],
+    "bourses": ["aides financières", "subventions", "financements", "aide financière"],
+    "ville": ["localisation", "endroit", "région", "marrakech", "marrakesh"],
+    "statut": ["type", "secteur", "public/privé"],
+    "site_web": ["site internet", "lien", "page web"],
+    "type_bourse": ["catégorie de bourse", "types d'aides"],
+    "nom": ["université", "école", "institut"]
+}
+
+STOP_WORDS = {'de', 'des', "d'", 'et', 'la', 'le', 'les', 'à', 'aux', 'en'}
+
+universities = []
+cities = []
+universities_by_city = defaultdict(list)
+uni_mappings = []
+
 def normalize_string(s):
-    normalized_str = unicodedata.normalize('NFKD', s).encode('ascii', 'ignore').decode('utf-8').lower()
-    return normalized_str
+    s = unicodedata.normalize('NFKD', s).encode('ascii', 'ignore').decode('utf-8').lower()
+    return re.sub(r'[^\w\s]', '', s)
 
-# Charger les données des universités depuis un fichier JSON
-def load_universities():
+def generate_acronym(name):
+    words = [word for word in re.split(r'\W+', name) if word.lower() not in STOP_WORDS]
+    return ''.join([word[0].upper() for word in words if word]).lower()
+
+def load_data():
+    global universities, cities, universities_by_city, uni_mappings
     try:
-          with open('universities.json', 'r', encoding='utf-8') as file:
-            return json.load(file)
+        with open('universities.json', 'r', encoding='utf-8') as file:
+            universities = json.load(file)
+            cities = list({normalize_string(uni["ville"]) for uni in universities})
+            
+            universities_by_city.clear()
+            for uni in universities:
+                city_norm = normalize_string(uni["ville"])
+                universities_by_city[city_norm].append(uni)
+            
+            uni_mappings.clear()
+            for uni in universities:
+                cleaned_name = re.sub(r'\(.*?\)', '', uni["nom"])
+                uni_mappings.append({
+                    "original": uni["nom"],
+                    "normalized": normalize_string(uni["nom"]),
+                    "acronym": generate_acronym(cleaned_name)
+                })
     except Exception as e:
-        print(f"Erreur lors du chargement des données : {e}")
-        return []
+        print(f"Erreur de chargement : {e}")
+        universities = []
 
-# Fonction principale pour traiter les questions
-def get_response(question):
-    universities = load_universities()
+def find_best_match(query, choices, threshold=65):
+    try:
+        result, score = process.extractOne(query, choices, scorer=fuzz.token_set_ratio)
+        return result if score >= threshold else None
+    except:
+        return None
 
-    if not universities:
-        return "Erreur : Impossible de charger les données des universités."
+def detect_entities(question):
+    question_norm = normalize_string(question)
+    entities = {"ville": None, "université": None, "statut": None, "intention": None}
 
-    # Vérification que la question n'est pas vide
-    if not question or question.strip() == "":
-        return "Veuillez poser une question."
+    # Détection université prioritaire
+    for mapping in uni_mappings:
+        if (mapping["normalized"] in question_norm or 
+            mapping["acronym"] in question_norm):
+            entities["université"] = mapping["original"]
+            break
 
-    question_normalized = normalize_string(question)  # Normaliser la question pour la comparaison
+    # Détection ville si aucune université trouvée
+    if not entities["université"]:
+        entities["ville"] = find_best_match(question_norm, cities)
 
-    # Recherche d'un nom d'université spécifique dans la question
-    for university in universities:
-        if normalize_string(university["nom"]) in question_normalized:
-            # Si un nom d'université est trouvé, on renvoie directement les formations ou bourses
-            if "bourses" in question_normalized:
-                return f"Bourses disponibles pour {university['nom']} : {university['bourses']} ({university['type_bourse']})"
-            if "formations" in question_normalized:
-                return f"Formations proposées par {university['nom']} : {', '.join(university['formations'])}."
+    # Détection des intentions
+    if "bourse" in question_norm or any(s in question_norm for s in SYNONYMS["bourses"]):
+        entities["intention"] = "bourses"
+    elif "formation" in question_norm or any(s in question_norm for s in SYNONYMS["formations"]):
+        entities["intention"] = "formations"
+    elif "site" in question_norm or any(s in question_norm for s in SYNONYMS["site_web"]):
+        entities["intention"] = "site_web"
 
-    
-    cities = [
-        "casablanca", "rabat", "marrakech", "fès", "kenitra", "nador", "tanger", 
-        "settat", "agadir", "oujda", "tétouan", "eljadida", "essaouira", "safi", 
-        "benslimane", "khemisset", "azilal", "taroudant", "khouribga", "mohammedia",
-        "beni mellal", "larache", "sidi ifni", "marrakech", "meknès", "oufella", 
-        "taounate", "tiznit", "ouarzzazate", "chichaoua", "ifrane"
-    ]
-    
-    for city in cities:
-        if city in question_normalized:
-            universities_in_city = [uni for uni in universities if normalize_string(uni["ville"]) == city]
-            if universities_in_city:
-                result = "\n".join([f"- {uni['nom']} ({uni['site_web']})" for uni in universities_in_city])
-                return f"Voici les universités à {city.capitalize()} :\n{result}"
-            return f"Aucune université trouvée à {city.capitalize()}."
+    return entities
 
-    # Recherche des bourses ou formations pour une ville spécifique
-    if "bourses" in question_normalized:
-        print(f"Recherche des bourses pour : {question_normalized}")  # Debugging
-        for city in cities:
-            if city in question_normalized:
-                universities_in_city = [uni for uni in universities if normalize_string(uni["ville"]) == city]
-                if universities_in_city:
-                    result = "\n".join([f"Bourses disponibles pour {uni['nom']} : {uni['bourses']} ({uni['type_bourse']})" for uni in universities_in_city])
-                    return f"Voici les bourses disponibles pour les universités à {city.capitalize()} :\n{result}"
+def generate_response(entities, question_norm):
+    # Réponse pour une université spécifique
+    if entities["université"]:
+        uni = next((u for u in universities if u["nom"] == entities["université"]), None)
+        if not uni:
+            return "Aucune information trouvée pour cette université"
+            
+        response = []
+        if entities.get("intention") == "bourses":
+            response.extend([
+                f"💰 Bourses disponibles : {uni['bourses']}",
+                f"📋 Types de bourses : {uni['type_bourse']}"
+            ])
+        elif entities.get("intention") == "formations":
+            response.append(f"🎓 Formations proposées : {', '.join(uni['formations'])}")
+        elif entities.get("intention") == "site_web":
+            response.append(f"🌐 Site officiel : {uni['site_web']}")
+        else:
+            response.extend([
+                f"🏛️ {uni['nom']} ({uni['statut']})",
+                f"📍 Ville : {uni['ville']}",
+                f"🔗 Site web : {uni['site_web']}"
+            ])
+        return "\n".join(response)
 
-    if "formations" in question_normalized:
-        print(f"Recherche des formations pour : {question_normalized}")  # Debugging
-        for city in cities:
-            if city in question_normalized:
-                universities_in_city = [uni for uni in universities if normalize_string(uni["ville"]) == city]
-                if universities_in_city:
-                    result = "\n".join([f"Formations proposées par {uni['nom']} : {', '.join(uni['formations'])}" for uni in universities_in_city])
-                    return f"Voici les formations proposées dans les universités à {city.capitalize()} :\n{result}"
+    # Réponse par ville
+    if entities["ville"]:
+        unis = universities_by_city.get(entities["ville"], [])
+        if entities["statut"]:
+            unis = [u for u in unis if u["statut"] == entities["statut"]]
+        
+        if unis:
+            return (f"📌 Universités à {entities['ville'].capitalize()} ({len(unis)} résultats) :\n" + 
+                    "\n".join(f"- {u['nom']} ({u['statut']}) : {u['site_web']}" for u in unis))
+        else:
+            return f"Aucune université trouvée à {entities['ville'].capitalize()}"
 
-    return "Je ne comprends pas votre question. Posez des questions sur les universités, les bourses ou les formations."
+    # Fallback général
+    return ("Je peux vous aider avec :\n"
+            "- Recherche d'universités par ville\n"
+            "- Informations sur les bourses\n"
+            "- Sites web des établissements\n"
+            "Exemple : 'Bourses à l'EHTP' ou 'Formations à Marrakech'")
+
+def get_response(question, context={}):
+    load_data()
+    question_norm = normalize_string(question)
+    entities = detect_entities(question)
+    return generate_response(entities, question_norm), {}
